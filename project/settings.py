@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 Django settings for project project.
 
@@ -9,9 +11,10 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
+import os.path
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -23,6 +26,12 @@ SECRET_KEY = 'lj-35m*+49jg+pji^sw)bw%-8z81og(=jb_6oh=ph3(5*qs70g'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+
+ADMINS = (
+    ('Marcelo Pessanha', 'mpessanha1975@gmail.com'),
+)
+
+MANAGERS = ADMINS
 
 ALLOWED_HOSTS = []
 
@@ -65,9 +74,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
