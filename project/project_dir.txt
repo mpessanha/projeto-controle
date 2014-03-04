@@ -1,0 +1,4 @@
+/media
+/sitestatic
+/static
+/templates
