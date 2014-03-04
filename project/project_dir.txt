@@ -1,4 +1,0 @@
-/media
-/sitestatic
-/static
-/templates
